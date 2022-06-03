@@ -2,7 +2,7 @@
   "name": "To-Do List",
   "short_name": "To-Do",
   "lang": "en-US",
-  "start_url": "/todo.html",
+  "start_url": "/todo/todo.html",
   "display": "minimal-ui",
   "theme_color": "#FFE260",
   "icons": [
