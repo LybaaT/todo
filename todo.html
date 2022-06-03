@@ -9,16 +9,16 @@
 </head>
 <body>
     <button onclick="addtask()">Add a task</button>
-    <div id="tasklist" class="container">
+    <ol id="tasklist" class="container">
     
 
-    </div>
+    </ol>
     <script>
 
         function addtask() {
             const container = document.getElementById('tasklist');
             const text = prompt('Type your new entry:');
-            const entry = '<p onclick="this.remove()">' + text + '</p>';
+            const entry = '<li onclick="this.remove()">' + text + '</li>';
             container.innerHTML += entry;
             save();
             entry.onclick = function() {
