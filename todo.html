@@ -27,8 +27,14 @@
             }   
         }
         function save() {
-
+            const container = document.getElementById('tasklist');
+            localStorage.setItem('myTasks', container.innerHTML);
         }
+        function load() {
+            const container = document.getElementById('tasklist');
+            container.innerHTML = localStorage.getItem('myTasks')
+        }
+        load()
     </script>
 </body>
 </html>
