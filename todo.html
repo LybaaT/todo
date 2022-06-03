@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <button onclick="addtask">Add a task</button>
+    <button onclick="addtask()">Add a task</button>
     <div id="tasklist" class="container">
     
 
@@ -20,6 +20,12 @@
             const entry = document.createElement('p');
             entry.innerText = prompt('Type your new entry:');
             container.appendChild(entry);
+            entry.onclick = function() {
+            this.remove();
+            }   
+        }
+        function save() {
+
         }
     </script>
 </body>
