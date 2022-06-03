@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do tasks</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
 </head>
 <body>
-    <button onclick="addtask()">Add a task</button>
+    <div class="heading">
+        <h1>Tasks for Today</h1>
+        <button onclick="addtask()">+</button>
+    </div>
     <ol id="tasklist" class="container">
-    
-
     </ol>
     <script>
 
@@ -22,8 +24,8 @@
             container.innerHTML += entry;
             save();
             entry.onclick = function() {
-            this.remove();
-            save();
+                this.remove();
+                save();
             }   
         }
         function save() {
