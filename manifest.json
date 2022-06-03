@@ -3,7 +3,7 @@
   "short_name": "To-Do",
   "lang": "en-US",
   "start_url": "/todo/todo.html",
-  "display": "minimal-ui",
+  "display": "fullscreen",
   "theme_color": "#FFE260",
   "icons": [
     {

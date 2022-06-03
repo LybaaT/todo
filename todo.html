@@ -30,7 +30,7 @@
         function addtask() {
             const container = document.getElementById('tasklist');
             const text = prompt('Type your new entry:');
-            const entry = '<li onclick="this.remove()">' + text + '</li>';
+            const entry = '<li onclick="this.remove()">' + text + '</li>' + '<hr>';
             container.innerHTML += entry;
             save();
             entry.onclick = function() {
