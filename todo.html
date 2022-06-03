@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <button>Add a task</button>
-    <div class="container">
-        <h1>hello</h1>
+    <button onclick="addtask">Add a task</button>
+    <div id="tasklist" class="container">
+    
 
     </div>
+    <script>
+
+        function addtask() {
+            const container = document.getElementById('tasklist');
+            const entry = document.createElement('p');
+            entry.innerText = prompt('Type your new entry:');
+            container.appendChild(entry);
+        }
+    </script>
 </body>
 </html>

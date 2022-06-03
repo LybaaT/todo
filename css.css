@@ -1,9 +1,13 @@
+body {
+    text-align: center;
+    background-color: lavender;
+}
 .container {
     background-color: rgb(184, 184, 255);
-    width: 70%;
+    width: 80%;
     height: 80vh;
     border: 2px solid black;
-    margin: 15%;
+    margin: 10%;
     text-align: left;
     padding: 2px;
 }
