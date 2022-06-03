@@ -20,10 +20,10 @@
             const text = prompt('Type your new entry:');
             const entry = '<p onclick="this.remove()">' + text + '</p>';
             container.innerHTML += entry;
-                save();
+            save();
             entry.onclick = function() {
             this.remove();
-                save();
+            save();
             }   
         }
         function save() {
