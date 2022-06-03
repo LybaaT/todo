@@ -1,8 +1,0 @@
-{
-  "background_color": "gray",
-  "description": "A to-do list for my phone",
-  "display": "fullscreen",
-  "name": "To-Do List",
-  "short_name": "To-Do",
-  "start_url": " lybaat.github.io/todo/todo.html"
-}

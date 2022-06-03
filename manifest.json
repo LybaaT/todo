@@ -1,0 +1,15 @@
+{
+  "name": "To-Do List",
+  "short_name": "To-Do",
+  "lang": "en-US",
+  "start_url": "/todo.html",
+  "display": "minimal-ui",
+  "theme_color": "#FFE260",
+  "icons": [
+    {
+      "src": "todo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

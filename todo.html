@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do tasks</title>
     <link rel="stylesheet" href="css.css">
-    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
-</head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="To-Do">
+    <meta name="apple-mobile-web-app-title" content="To-Do">
+    <meta name="theme-color" content="#FFE260">
+    <meta name="msapplication-navbutton-color" content="#FFE260">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/todo.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="512x512" href="todo.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="todo.png"></head>
 <body>
-    <div class="heading">
-        <h1>Tasks for Today</h1>
-        <button onclick="addtask()">+</button>
-    </div>
+    <h1>Tasks for Today</h1>
+    <button class="add" onclick="addtask()">
+        <img src="pencil.png" width="50px">
+    </button>
     <ol id="tasklist" class="container">
     </ol>
     <script>
