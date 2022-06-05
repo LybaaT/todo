@@ -7,7 +7,7 @@
     margin: 0;
 }
 body {
-    text-align: center;
+    text-align: left;
     background-color: white;
     font-family: "font";
 }
@@ -29,13 +29,16 @@ button {
     background: #ffffff;
     font-size: 20px;
     display: block;
-    padding: 20px;
     float: right;
     margin-right: 10%;
+    position: fixed;
+    right: 1%;
+    bottom: 10%;
+    width: 60px;
+    height: 60px;
 }
 li {
     margin-left: 10%;
     font-family: "font";
     padding: 20px 0 20px;
-    border-top: 1px solid grey;
 }
