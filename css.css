@@ -21,7 +21,8 @@ body {
     overflow-y: auto;/* put a scroll on the container */
 }
 h1 {
-    margin-top:20%;
+    margin-top:10%;
+    left: ;
 }
 button {
     border:1px solid grey;
@@ -42,3 +43,7 @@ li {
     font-family: "font";
     padding: 20px 0 20px;
 }
+hr {
+    border: none;
+    border-top: 1px solid gray;
+} 
