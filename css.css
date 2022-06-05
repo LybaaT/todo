@@ -29,15 +29,14 @@ h1 {
     margin-top:15%;
     margin-left: 15%;
     font-family: "font2";
-    font-size: 40px;
+    font-size: 30px;
 }
 button {
-    border:1px solid rgb(190, 188, 188);
+    border:1px solid #e2d4b7;
     border-radius: 50%;
-    background: #ffffff;
-    box-shadow: 1px 1px rgb(167, 164, 164);
+    background: #e2d4b7;
     font-size: 40px;
-    color: blue;
+    color: #260C1A;
     display: block;
     float: right;
     margin-right: 10%;
@@ -46,6 +45,18 @@ button {
     bottom: 10%;
     width: 60px;
     height: 60px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border-radius: 150px;
+    background: linear-gradient(145deg, #f2e3c4, #cbbfa5);
+    box-shadow:  10px 10px 20px #c0b49c,
+                -10px -10px 20px #fff4d2;
+}
+button:active {
+    border-radius: 150px;
+    background: #e2d4b7;
+    box-shadow: inset 10px 10px 20px #c0b49c,
+                inset -10px -10px 20px #fff4d2;
 }
 li {
     margin-left: 15%;
