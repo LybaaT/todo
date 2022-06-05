@@ -29,17 +29,9 @@
         function addtask() {
             const container = document.getElementById('tasklist');
             const text = prompt('Type your new entry:');
-            const entry = '<li onclick="this.remove()">' + text + '</li>' + '<hr>';
+            const entry = '<li onclick="this.style.textDecoration = "line-through"; save();" oncontextmenu="this.remove(); save()">' + text + '</li><hr>';
             container.innerHTML += entry;
             save();
-            entry.onclick = function() {
-                this.style.textDecoration = 'line-through';
-                save();
-            }
-            entry.oncontextmenu = function() {
-                this.remove();
-                save();
-            }        
         }
         function save() {
             const container = document.getElementById('tasklist');
