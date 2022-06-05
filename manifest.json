@@ -1,6 +1,6 @@
 {
-  "name": "To-Do List",
-  "short_name": "To-Do",
+  "name": "Do List",
+  "short_name": "Do",
   "lang": "en-US",
   "start_url": "/todo/todo.html",
   "display": "fullscreen",
@@ -8,7 +8,7 @@
   "icons": [
     {
       "src": "todo.png",
-      "sizes": "512x512",
+      "sizes": "500x500",
       "type": "image/png"
     }
   ]

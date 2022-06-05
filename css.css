@@ -16,6 +16,7 @@ body {
     font-family: "font2";
     color: #260C1A;
     user-select: none;
+    overflow: hidden;
 }
 .container {
     width: 100%;
@@ -63,10 +64,6 @@ li {
     font-family: "font2";
     padding: 20px 0 20px;
     font-size: 20px;
-}
-ol::marker {
-    margin-top: 10px;
-    background-color: #260C1A;
 }
 hr {
     border: none;
