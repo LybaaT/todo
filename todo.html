@@ -21,15 +21,16 @@
 <body>
     <div class="main">
         <h1 style="display:inline-block">Tasks for Today</h1>
-        <ol id="tasklist" class="container">
-        </ol>
+        <ul id="tasklist" class="container">
+        </ul>
         <button class="add" onclick="addtask()"> + </button>
     <script>
 
         function addtask() {
             const container = document.getElementById('tasklist');
             const text = prompt('Type your new entry:');
-            const entry = `<li onclick="this.style.textDecoration = 'line-through'; save();" oncontextmenu="this.remove(); save()">${text}</li><hr>`;            container.innerHTML += entry;
+            const entry = `<li onclick="this.style.textDecoration = 'line-through'; save();" oncontextmenu="event.preventDefault(); this.previousSibling.remove(); save()" save()">${text}</li><hr>`;
+            container.innerHTML += entry;
             save();
         }
         function save() {
