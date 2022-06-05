@@ -12,8 +12,10 @@
 }
 body {
     text-align: left;
-    background-color: rgb(253, 209, 255);
+    background-color: #e2d4b7;
     font-family: "font2";
+    color: #260C1A;
+    user-select: none;
 }
 .container {
     width: 100%;
@@ -51,8 +53,13 @@ li {
     padding: 20px 0 20px;
     font-size: 20px;
 }
+ol::marker {
+    margin-top: 10px;
+    background-color: #260C1A;
+}
 hr {
     border: none;
     border-top: 1px solid gray;
-    margin-left: 15%
+    margin-left: 15%;
+    background-color: #260C1A;
 } 

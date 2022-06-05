@@ -29,7 +29,7 @@
         function addtask() {
             const container = document.getElementById('tasklist');
             const text = prompt('Type your new entry:');
-            const entry = `<li onclick="this.style.textDecoration = 'line-through'; save();" oncontextmenu="event.preventDefault(); this.previousSibling.remove(); save()" save()">${text}</li><hr>`;
+            const entry = `<li onclick="this.style.textDecoration = 'line-through'; save();" oncontextmenu="event.preventDefault(); this.previousSibling.remove(); this.remove(); save()">${text}</li><hr>`;
             container.innerHTML += entry;
             save();
         }
